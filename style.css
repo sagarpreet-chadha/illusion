@@ -1,0 +1,132 @@
+*{
+	margin: 0px;
+	padding:0px;
+}
+.circle{
+	width: 354px;
+	height: 354px;
+	position: absolute;
+	top: 70px;
+	left: 70px;
+	border-radius: 100%;
+	border:1px solid;
+}
+.container{
+	display: flex;
+	width: 294px;
+	height: 294px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	/*border-radius: 100%;*/
+	/*border:1px solid;*/
+	flex-wrap: wrap;
+	transform: rotate(45deg);
+	animation-name: rot;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+.petal{
+	width: 50px;
+	height: 50px;
+	border-radius: 0 25px 25px 25px;
+	position: absolute;
+	border-top: 2px solid;
+	border-left: 1px solid
+}
+
+.color1{
+	background: radial-gradient(at top left, white 20%,pink 40%,purple 60%, white 80%, black 90%);
+}
+.color2{
+	background: radial-gradient(at top left, white 20%,yellow 40%,red 60%, white 80%, black 90%);
+}
+.color3{
+	background: radial-gradient(at top left, white 20%,teal 40%,green 60%, white 80%, black 90%);
+}
+.color4{
+	background: radial-gradient(at top left, white 20%,red 40%,pink 60%, white 80%, black 90%);
+}
+
+#p1{
+	transform: rotate(45deg) skew(10deg,10deg);
+	top:16px;
+	left: 47px;
+}
+#p2{
+	transform: rotate(135deg) skew(10deg,10deg); 
+	top: 47px;
+	left: 78px;
+}
+#p3{
+	transform: rotate(225deg) skew(10deg,10deg);
+	top: 78px;
+	left: 47px;
+}
+#p4{
+	transform: rotate(315deg) skew(10deg,10deg);
+	top: 47px;
+	left: 16px;
+}
+#p5{
+	transform: rotate(0deg) skew(10deg,10deg);
+	top:25px;
+	left: 25px;
+
+}
+#p6{
+	transform: rotate(90deg) skew(10deg,10deg); 
+	top: 25px;
+	left: 69px;
+}
+#p7{
+	transform: rotate(180deg) skew(10deg,10deg);
+	top: 69px;
+	left: 69px;
+}
+#p8{
+	transform: rotate(270deg) skew(10deg,10deg);
+	top: 69px;
+	left: 25px;
+}
+
+.flower{
+	width: 145px;
+	height: 145px;
+	position: relative;
+	border-radius: 100%;
+	border:1px solid;
+	display: inline-block;
+	animation-name: rot;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+
+.f1{
+	background: radial-gradient(white 20%,pink 40%,purple 60%, white 80%, black 90%);
+}
+.f2{
+	background: radial-gradient(white 20%,yellow 40%,red 60%, white 80%, black 90%);
+}
+.f3{
+	background: radial-gradient(white 20%,teal 40%,green 60%, white 80%, black 90%);
+}
+.f4{
+	background: radial-gradient(white 20%,red 40%,pink 60%, white 80%, black 90%);
+}
+
+@keyframes rot{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(180deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
